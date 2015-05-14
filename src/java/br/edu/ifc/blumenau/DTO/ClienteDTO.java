@@ -22,7 +22,7 @@ public class ClienteDTO {
     }
 
     public ClienteDTO(int id, String nome, String cpf, String endereco,
-            String numero, String complemento, String bairro, String estado,
+            String numero, String complemento, String bairro, String cidade, String estado,
             String cep, String telefone, String usuario, String senha,
             boolean tipo) {
         this.id = id;
