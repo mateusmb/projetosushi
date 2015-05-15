@@ -1,2 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Context antiJARLocking="true" path="/ProjetoWeb"/>
+<Context antiJARLocking="true" path="/ProjetoSushi">
+    <Resource name="jdbc/SushiDB" auth="Container" type="javax.sql.DataSource"
+               maxTotal="100" maxIdle="30" maxWaitMillis="10000"
+               username="aluno-info" password="info2015" driverClassName="com.mysql.jdbc.Driver"
+               url="jdbc:mysql://10.1.0.50:3306/sushidb"/>
+</Context>
+

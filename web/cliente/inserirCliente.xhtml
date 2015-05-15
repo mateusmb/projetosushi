@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+        <h:form>
+            <h:panelGrid columns="2">
+                <h:outputText value="Nome: "></h:outputText>
+                <h:inputText value="${clienteMB.cliente.nome}"></h:inputText>
+                <h:outputText value="CPF: "></h:outputText>
+                <h:inputText value="${clienteMB.cliente.cpf}"></h:inputText>                
+                <h:outputText value="Telefone: "></h:outputText>
+                <h:inputText value="${clienteMB.cliente.telefone}"></h:inputText>                
+
+
+                <h:outputText value="Endereço: "></h:outputText>
+                <h:inputText value="${clienteMB.cliente.endereco}"></h:inputText>                
+
+                <h:outputText value="Número: "></h:outputText>
+                <h:inputText value="${clienteMB.cliente.numero}"></h:inputText>                
+
+                <h:outputText value="Complemento: "></h:outputText>
+                <h:inputText value="${clienteMB.cliente.complemento}"></h:inputText>                                
+
+                <h:outputText value="Bairro: "></h:outputText>
+                <h:inputText value="${clienteMB.cliente.bairro}"></h:inputText>                                                
+
+                <h:outputText value="Cidade: "></h:outputText>
+                <h:inputText value="${clienteMB.cliente.cidade}"></h:inputText>                                                                
+
+                <h:outputText value="Estado: "></h:outputText>
+                <h:inputText value="${clienteMB.cliente.estado}"></h:inputText>                                                                
+                
+                <h:outputText value="CEP: "></h:outputText>
+                <h:inputText value="${clienteMB.cliente.cep }"></h:inputText>                                                                                
+                
+                <h:outputText value="Usuario: "></h:outputText>
+                <h:inputText value="${clienteMB.cliente.usuario}"></h:inputText>                                                                
+                
+                <h:outputText value="Senha: "></h:outputText>
+                <h:inputText value="${clienteMB.cliente.senha }"></h:inputText>            
+            </h:panelGrid>
+            <h:commandButton value="Salvar" action="#{clienteMB.inserir()}"></h:commandButton>
+        </h:form>
+    </h:body>
+</html>
+
